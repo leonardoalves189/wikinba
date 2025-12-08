@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/png" href="imagem/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hall da Fama | NBA</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="imagem/header.png" alt="NBA" class="foto-header">
+        </a>
+
+        <nav class="menu">
+            <a href="origembasquete.html" class="links">Origem do Basquete</a>
+            <a href="ligahistoria.html" class="links">A Liga: História</a>
+            <a href="estruturadanba.html" class="links">Estrutura da NBA</a>
+            <a href="times.html" class="links">Times</a>
+            <a href="halldafama.html" class="links">Hall da Fama</a>
+            <a href="muraldelendas.html" class="links">Mural das Lendas</a>
+            <a href="produtos.html" class="links">Produtos</a>
+            <a href="projetoinstitucional.html" class="links">Projeto Institucional</a>
+            <a href="sejaummvp.html" class="destaque">Seja um MVP!</a>
+        </nav>
+    </header>
+
+    <main class="mvp-page">
+        <div class="fundotexto2">
+            <h2 class="centro h2maior"><b>SEJA UM MVP!</b></h2><br>
+            <hr>
+            <br>
+
+            <div class="formatacao-forms">
+                <form>
+                    <h3>
+                        <div class="inputbox">
+                            <input type="text" name="nome" id="nome" class="inputuser" required>
+                            <label for="nome" class="labelinput">Nome completo</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="email" name="email" id="email" class="inputuser" required>
+                            <label for="email" class="labelinput">Email</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="tel" name="telefone" id="telefone" class="inputuser" required>
+                            <label for="telefone" class="labelinput">Telefone</label>
+                        </div>
+                        <div class="inputbox radio-box">
+                            <label class="titulosexo">Sexo:</label>
+                            <div class="radio-item">
+                                <input type="radio" id="fem" name="sexo" value="Feminino" required>
+                                <label for="fem">Feminino</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="masc" name="sexo" value="Masculino" required>
+                                <label for="masc">Masculino</label>
+                            </div>
+                        </div>
+                        <div class="inputbox">
+                            <input type="date" name="nascimento" id="nascimento" class="inputuser">
+                            <label for="nascimento" class="labelinput">Data de nascimento</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" name="cidade" id="cidade" class="inputuser" required>
+                            <label for="cidade" class="labelinput">Cidade/Estado</label>
+                        </div>
+                        <div class="inputbox select-box">
+                            <label class="labelselect">Como você conheceu a NBA?</label>
+                            <select id="conheceu" name="conheceu" required>
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="tv">TV</option>
+                                <option value="youtube">YouTube</option>
+                                <option value="redes-sociais">Redes sociais</option>
+                                <option value="amigos">Indicação de amigos</option>
+                                <option value="jogos-2k">Jogos como NBA 2K</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="inputbox range">
+                            <label for="volume">O quanto você acompanha a NBA?</label>
+                            <input type="range" id="volume" name="volume" min="0" max="100">
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" name="favoritos" id="favoritos" class="inputuser" required>
+                            <label for="favoritos" class="labelinput">Jogadores ou times favoritos</label>
+                        </div>
+                        <div class="inputbox select-box">
+                            <label class="labelselect">Você já participou de comunidades de basquete?</label>
+                            <select id="outros-fanclubs" name="outros-fanclubs" required>
+                                <option value="" disabled selected>Responda</option>
+                                <option value="sim">Sim</option>
+                                <option value="nao">Não</option>
+                            </select>
+                        </div>
+                        <div class="inputbox select-box">
+                            <label class="labelselect">Rede social onde mais acompanha NBA:</label>
+                            <select id="rede-social" name="rede-social" required>
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="youtube">YouTube</option>
+                                <option value="tiktok">TikTok</option>
+                                <option value="twitter">Twitter (X)</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="inputbox select-box">
+                            <label class="labelselect">Deseja receber notícias e estatísticas?</label>
+                            <select id="novidades" name="novidades" required>
+                                <option value="" disabled selected>Responda</option>
+                                <option value="email">Email</option>
+                                <option value="whatsapp">WhatsApp</option>
+                                <option value="ambos">Ambos</option>
+                                <option value="nenhum">Nenhum</option>
+                            </select>
+                        </div>
+                        <div class="inputbox">
+                            <textarea name="sugestoes" id="sugestoes" class="inputuser" required></textarea>
+                            <label for="sugestoes" class="labelinput">Por que você quer ser um MVP?</label>
+                        </div>
+                        <div class="centro">
+                            <input type="submit" id="submit" value="Enviar">
+                            <button type="reset" id="reset">Limpar</button>
+                        </div>
+                    </h3>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-conteudo">
+            <div class="footer-section">
+                <h3>Informações</h3>
+                <div class="h3linksfooter"><a href="projetoinstitucional.html">Sobre</a></div>
+                <div class="h3linksfooter"><a href="projetoinstitucional.html">Contato</a></div>
+                <div class="h3linksfooter"><a href="projetoinstitucional.html">Termos de Uso</a></div>
+                <div class="h3linksfooter"><a href="projetoinstitucional.html">Privacidade</a></div>
+
+            </div>
+            <div class="footer-section">
+                <h3>NBA</h3>
+                <div class="h3linksfooter"><a href="times.html">Times</a></div>
+                <div class="h3linksfooter"><a href="halldafama.html">Lendas</a></div>
+                <div class="h3linksfooter"><a href="muraldelendas.html">Imagens</a></div>
+                <div class="h3linksfooter"><a href="produtos.html">Produtos</a></div>
+            </div>
+        </div>
+        <div class="footer-direitos">
+            <h3>© 2025 • Todos os direitos reservados à Leonardo Nascimento Alves</h3>
+            <div style="display: flex;">
+                <div class="h3linksfooter"><a href="https://www.instagram.com/nba/?hl=en" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></div>
+
+                <div class="h3linksfooter"><a href="https://x.com/NBA" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-square-x-twitter"></i></a></div>
+
+                <div class="h3linksfooter"><a href="https://www.youtube.com/user/NBA" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a></div>
+
+                <div class="h3linksfooter"><a href="https://www.tiktok.com/@nba" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a></div>
+
+                <div class="h3linksfooter"><a href="https://www.facebook.com/nba" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a></div>
+
+                <div class="h3linksfooter"><a href="https://www.snapchat.com/@nba" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-snapchat"></i></a></div>
+
+                <div class="h3linksfooter"><a href="https://www.twitch.tv/nba" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-twitch"></i></a></div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
