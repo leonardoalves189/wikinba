@@ -433,6 +433,14 @@ h3 {
     font-size: 80px;
 }
 
+.amarelo-header{
+    color:#FFE14C;
+}
+
+.sombra-header-forms:hover {
+    text-shadow: 0 0 10px #f0ed38;
+}
+
 /* -----------------------------------------------------------
    ANIMAÇÃO DO INÍCIO
 ----------------------------------------------------------- */
@@ -1827,6 +1835,13 @@ hr {
 /* -----------------------------
    FORMULÁRIOS
 ------------------------------*/
+.fundo-header-form {
+    background-color: #27187E;
+    border: 5px #000;
+    border-radius: 15px;
+    box-shadow: 6px 6px #3618e0;
+}
+
 .mvp-page {
     padding-top: 150px;
 }
